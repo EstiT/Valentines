@@ -44,5 +44,6 @@ h1 {
 .little-h {
   margin: auto;
   display: block;
+  margin-top: 7rem;
 }
 </style>
