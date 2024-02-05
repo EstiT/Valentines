@@ -3,7 +3,6 @@ import { RouterLink } from 'vue-router';
 import { ref } from 'vue';
 import Question from '../components/Question.vue';
 
-
 const phraseIndex = ref(0);
 const phrases = [
   'No',
@@ -21,6 +20,8 @@ const phrases = [
   "Is that you final answer?",
   "You're breaking my heart"
 ];
+let pad = 0;
+const padding = ref('0 1rem');
 
 function hover($event: Event) {
   const min = -30;
@@ -36,9 +37,10 @@ function hover($event: Event) {
   <main>
     <Question />
     <div class="buttons">
-      <RouterLink to="/" class='lined thin'>Yes!</RouterLink>
-      <RouterLink to="/about" class='lined thin noBtn' @mouseover="hover">{{ phrases[phraseIndex] }}</RouterLink>
+      <RouterLink to="/yes" class='lined thin yesBtn'>Yes!</RouterLink>
+      <RouterLink to="/" class='lined thin noBtn' @mouseover="hover">{{ phrases[phraseIndex] }}</RouterLink>
     </div>
+    <img src="@/assets/pusheenHeart.gif" class="pusheen" />
     <img alt="heart" class="heart h1" src="@/assets/heart.svg" width="850" height="850" />
     <img alt="heart" class="heart h2" src="@/assets/heart.svg" width="850" height="850" />
   </main>
@@ -50,5 +52,20 @@ function hover($event: Event) {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pusheen {
+  position: absolute;
+  right: 22%;
+  top: 15%;
+}
+
+.yesBtn {
+  padding: v-bind(padding);
+}
+
+.noBtn {
+  position: relative;
+  z-index: 2;
 }
 </style>
