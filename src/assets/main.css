@@ -7,12 +7,13 @@
   font-weight: normal;
 }
 
-a,
-.green {
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: var(--color-text);
   transition: 0.4s;
-  padding: 3px;
+  padding: 1rem;
+  font-size: 2rem;
+  border: solid 1px white;
 }
 
 .heart {
@@ -38,15 +39,7 @@ a,
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+body {
+  display: flex;
+  place-items: center;
 }
