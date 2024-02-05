@@ -14,6 +14,21 @@ a {
   padding: 1rem;
   font-size: 2rem;
   border: solid 1px white;
+  background: transparent;
+  margin:0 1rem;
+
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+}
+
+a:hover{
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 100%, 0.1);
+}
+
+a.lined.thin{
+  border: solid 2px white;
 }
 
 .heart {

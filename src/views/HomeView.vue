@@ -9,8 +9,8 @@ const noCopy = ref('No');
 <template>
   <main>
     <Question />
-    <RouterLink to="/">Yes</RouterLink>
-    <RouterLink to="/about">{{ noCopy }}</RouterLink>
+    <RouterLink to="/" class='lined thin'>Yes</RouterLink>
+    <RouterLink to="/about" class='lined thin'>{{ noCopy }}</RouterLink>
     <img alt="heart" class="heart h1" src="@/assets/heart.svg" width="850" height="850" />
     <img alt="heart" class="heart h2" src="@/assets/heart.svg" width="850" height="850" />
   </main>
