@@ -4,7 +4,8 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 <template>
   <main>
-    <img alt="heart" class=" heart h1" src="@/assets/heart.svg" width="850" height="850" />
-    <img alt="heart" class=" heart h2" src="@/assets/heart.svg" width="850" height="850" />
+    <TheWelcome />
+    <img alt="heart" class="heart h1" src="@/assets/heart.svg" width="850" height="850" />
+    <img alt="heart" class="heart h2" src="@/assets/heart.svg" width="850" height="850" />
   </main>
 </template>
