@@ -24,12 +24,14 @@ let pad = 0;
 const padding = ref('0 1rem');
 
 function hover($event: Event) {
-  const min = -30;
-  const max = 20;
-  const translate = `translate(${Math.ceil(Math.random() * (max - min) + min)}rem, ${Math.ceil(Math.random() * (max - min) + min)}rem)`
+  const min = -9;
+  const max = 9;
+  const translate = `translate(${Math.ceil(Math.random() * (max + 2 - min + 2) + min + 2)}rem, ${Math.ceil(Math.random() * (max - min) + min)}rem)`
   if ($event.target) {
     ($event.target as HTMLElement).style.transform = translate;
   }
+  padding.value = `${pad}rem ${pad + 1}rem`
+  pad += 0.5;
 }
 </script>
 
@@ -58,6 +60,8 @@ function hover($event: Event) {
   position: absolute;
   right: 22%;
   top: 15%;
+  width: 8rem;
+  object-fit: contain;
 }
 
 .yesBtn {
