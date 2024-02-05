@@ -15,6 +15,22 @@ a,
   padding: 3px;
 }
 
+.heart {
+  display: block;
+  position: absolute;
+}
+
+.h1 {
+  top: -7rem;
+  left: -8rem;
+  transform: rotate(-14deg);
+}
+.h2 {
+  bottom: -7rem;
+  right: -12rem;
+  transform: rotate(23deg);
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);

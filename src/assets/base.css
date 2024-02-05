@@ -19,6 +19,7 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --dark-red-color: #7C0D10;
 }
 
 /* semantic color variables for this project */
@@ -33,12 +34,14 @@
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
 
+  --color-dark-red: #7C0D10;
+
   --section-gap: 160px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--vt-c-black);
+    --color-background: var(--color-dark-red);
     --color-background-soft: var(--vt-c-black-soft);
     --color-background-mute: var(--vt-c-black-mute);
 
@@ -62,6 +65,7 @@ body {
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
+  overflow: hidden;
   transition:
     color 0.5s,
     background-color 0.5s;
